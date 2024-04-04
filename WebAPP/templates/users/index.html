@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block subtitle %}
+  <h2>{{ subtitle }}</h2>
+{% endblock %}
+
+{% block content %}
+  <ul class="list-group">
+    {% for user in users %}
+    {% comment %} <li>
+      <a class="list-group-item-danger" 
+         href="{% url 'onebook' user.id %}">{{ user.id }}: {{ user.name }} - {{ user.familia }}</a>
+    </li> {% endcomment %}
+    {% endfor %}
+  </ul>
+{% endblock %}

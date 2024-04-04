@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Авторизация</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/login.css'%}" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/navigation.css'%}" type="text/css">
+</head>
+
+<body>
+	<header class="header">
+        <div class="container">
+                <a class="navbar-brand" href="Liga Tennisa" style=color:black; >
+                    <img src="https://img.icons8.com/emoji/12x/tennis-emoji.png" alt="logo" width="120" class="logo-img" align="left">
+                    <a href="/""" class="ligatennisa"><h2><p>Лига <br />Тенниса</p></h2></a>	
+                </a>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Турниры</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Корты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Тренировки</a>
+                    </li>			
+                </ul>
+            </nav>
+            <a href="/login" class="btnlogin">
+                Вход
+            </a>
+            <a href="/registration" class="btnregistr">
+                Регистрация
+            </a>
+        </div>
+    </header>
+
+  <main>
+	<div class="circle"></div>
+    <div class ="login-form-container">
+      <h1 class = "form-title">
+        Авторизация
+      </h1>
+      <div class = "form-fields">	
+		<div class = "form-field">
+			<input type = "text" class="form-control" placeholder = "Логин">
+		  </div>
+        
+        <div class = "form-field">
+          <input type = "text" class="form-control" placeholder = "Пароль">
+        </div>        
+      </div>
+      <div class = "form-buttons">
+        <button class ="button">Войти</button>
+    </div>
+
+	<div>
+		<a href="#" class = "help" >Забыли пароль?</a><a href="/registration" class = "help" >Создать аккаунт</a>
+	</div>
+	<hr>
+	<div class="text-center">
+		<p>Или авторизуйтесь через:</p>
+		<a href="#" class="btn btn-white">
+		<img class="mx-1" src="https://cdn-icons-png.flaticon.com/512/10110/10110386.png" alt="Catalog Icon" width="32" height="32">
+		Google
+		</a>
+		<a href="#" class="btn btn-white">
+		<img class="mx-1" src="https://cdn-icons-png.flaticon.com/512/5968/5968893.png" alt="Catalog Icon" width="32" height="32">
+		VK
+		</a>
+		<a href="#" class="btn btn-white">
+		<img class="mx-1" src="https://cdn-icons-png.flaticon.com/512/3291/3291695.png" alt="Catalog Icon" width="32" height="32">
+		GitHub
+		</a>
+	</div>
+  </main>
+
+
+  <footer>
+    <div>
+    	<ul class = "menu">
+            <li><a href="/aboutus">О нас</a></li>
+            <li><a href="/contact">Контакты</a></li>
+            <li><a href="">Политика конфиденциальности</a></li>
+            <li><a href="">и тд и тп</a></li>
+        </ul>
+        <ul class = "social">
+          <li><a href="#"> <img class="mx-1" src="https://cdn-icons-png.flaticon.com/512/1077/1077042.png" alt="Insta Icon" width="32" height="32"></a></li>
+          <li><a href="#"> <img class="mx-1" src="https://cdn-icons-png.flaticon.com/512/25/25684.png" alt="VK Icon" width="32" height="32"></a></li>
+          <li><a href="#"> <img class="mx-1" src="https://cdn-icons-png.flaticon.com/512/2111/2111710.png" alt="TG Icon" width="32" height="32"></a></li>
+        </ul>
+	  <p>©2024. Все права защищены</p>
+    </div>
+</footer>
+</body>
+
+</html>

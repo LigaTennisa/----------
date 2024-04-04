@@ -1,0 +1,1 @@
+start .\django_env\Scripts\activate.bat
